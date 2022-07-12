@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0" />
+
+<head>
+    <link rel="stylesheet" type="text/css" href="css.css">
+</head>
+<style>
+</style>
+<div id='images'>
+    <center>
+        <img src="home_images/el.gif" alt="a gif of a 3d modeled boat dock, water, and small shrub"></center>
+</div><br><br>
+<center>Welcome</center>
+<br>
+
+<script src="js.js"></script>
+<script type="text/javascript">
+    var hash = parent.parent.location.hash;
+    if (hash) {
+        redirect = hash.substring(1, hash.length);
+        console.log(redirect)
+        load(redirect)
+    }
+</script>
